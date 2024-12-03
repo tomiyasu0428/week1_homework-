@@ -16,7 +16,7 @@ print(f"合計値: {date_sum(info)}")
 # 最大値の関数
 
 
-def date_max(info):
+def data_max(info):
     number_max = info[0]
     for j in info:
         if j >= number_max:
@@ -24,7 +24,7 @@ def date_max(info):
     return number_max
 
 
-print(f"最大値: {date_max(info)}")
+print(f"最大値: {data_max(info)}")
 
 # 最小値の関数
 
