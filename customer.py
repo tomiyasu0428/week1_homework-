@@ -10,13 +10,13 @@ class Customer:
     def entry_fee(self):
         if self.age <= 20:
             return 1000
-        if 20 <= self.age < 65:
+        elif 20 <= self.age < 65:
             return 1500
-        if self.age >= 65:
+        else:
             return 1200
 
     def info_csv(self):
-        return f'"{self.first_name} {self.family_name},{self.age},{self.entry_fee()}"'
+        return f'"{self.full_name()},{self.age},{self.entry_fee()}"'
 
 
 ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
